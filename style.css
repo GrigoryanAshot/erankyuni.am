@@ -732,6 +732,21 @@ img {
     box-shadow: none;
     border: 1px solid #e1dddd; }
 
+.south-search-area #cities + .nice-select,
+.south-search-area #catagories + .nice-select,
+.south-search-area #offers + .nice-select,
+.south-search-area #listings + .nice-select {
+  background-color: #fff !important; }
+  .south-search-area #cities + .nice-select:hover,
+  .south-search-area #catagories + .nice-select:hover,
+  .south-search-area #offers + .nice-select:hover,
+  .south-search-area #listings + .nice-select:hover,
+  .south-search-area #cities + .nice-select:focus,
+  .south-search-area #catagories + .nice-select:focus,
+  .south-search-area #offers + .nice-select:focus,
+  .south-search-area #listings + .nice-select:focus {
+    background-color: #fff !important; }
+
 .nice-select {
   line-height: 34px;
   position: relative;

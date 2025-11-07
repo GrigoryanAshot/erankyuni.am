@@ -832,6 +832,19 @@ img {
     }
 }
 
+.south-search-area {
+    #cities + .nice-select,
+    #catagories + .nice-select,
+    #offers + .nice-select,
+    #listings + .nice-select {
+        background-color: #fff !important;
+        &:hover,
+        &:focus {
+            background-color: #fff !important;
+        }
+    }
+}
+
 .nice-select {
     line-height: 34px;
     position: relative;
