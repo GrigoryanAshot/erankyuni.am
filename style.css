@@ -732,30 +732,21 @@ img {
     box-shadow: none;
     border: 1px solid #e1dddd; }
 
-.south-search-area #cities + .nice-select,
-.south-search-area #catagories + .nice-select,
-.south-search-area #offers + .nice-select,
-.south-search-area #listings + .nice-select {
-  background-color: #fff !important; }
-  .south-search-area #cities + .nice-select:hover,
-  .south-search-area #catagories + .nice-select:hover,
-  .south-search-area #offers + .nice-select:hover,
-  .south-search-area #listings + .nice-select:hover,
-  .south-search-area #cities + .nice-select:focus,
-  .south-search-area #catagories + .nice-select:focus,
-  .south-search-area #offers + .nice-select:focus,
-  .south-search-area #listings + .nice-select:focus {
-    background-color: #fff !important; }
 
 .nice-select {
   line-height: 34px;
   position: relative;
-  z-index: 1001; }
+  z-index: 1; }
+  .nice-select.form-control {
+    background-color: #fff !important;
+    background: #fff !important; }
+  .nice-select.open {
+    z-index: 10001 !important; }
   .nice-select .list {
     left: 0 !important;
     right: 0 !important;
     border-radius: 0;
-    z-index: 10000 !important;
+    z-index: 10002 !important;
     position: absolute !important; }
   .nice-select .option {
     position: relative; }
@@ -804,6 +795,56 @@ img {
     @media only screen and (max-width: 767px) {
       .south-search-area .advanced-search-form {
         padding: 30px 20px; } }
+    .south-search-area .advanced-search-form #cities + .nice-select,
+    .south-search-area .advanced-search-form #catagories + .nice-select,
+    .south-search-area .advanced-search-form #offers + .nice-select,
+    .south-search-area .advanced-search-form #listings + .nice-select {
+      background-color: #fff !important;
+      background: #fff !important; }
+      .south-search-area .advanced-search-form #cities + .nice-select:hover,
+      .south-search-area .advanced-search-form #catagories + .nice-select:hover,
+      .south-search-area .advanced-search-form #offers + .nice-select:hover,
+      .south-search-area .advanced-search-form #listings + .nice-select:hover,
+      .south-search-area .advanced-search-form #cities + .nice-select:focus,
+      .south-search-area .advanced-search-form #catagories + .nice-select:focus,
+      .south-search-area .advanced-search-form #offers + .nice-select:focus,
+      .south-search-area .advanced-search-form #listings + .nice-select:focus,
+      .south-search-area .advanced-search-form #cities + .nice-select:active,
+      .south-search-area .advanced-search-form #catagories + .nice-select:active,
+      .south-search-area .advanced-search-form #offers + .nice-select:active,
+      .south-search-area .advanced-search-form #listings + .nice-select:active,
+      .south-search-area .advanced-search-form #cities + .nice-select.open,
+      .south-search-area .advanced-search-form #catagories + .nice-select.open,
+      .south-search-area .advanced-search-form #offers + .nice-select.open,
+      .south-search-area .advanced-search-form #listings + .nice-select.open {
+        background-color: #fff !important;
+        background: #fff !important; }
+      @media only screen and (max-width: 767px) {
+        .south-search-area .advanced-search-form #cities + .nice-select,
+        .south-search-area .advanced-search-form #catagories + .nice-select,
+        .south-search-area .advanced-search-form #offers + .nice-select,
+        .south-search-area .advanced-search-form #listings + .nice-select {
+          background-color: #fff !important;
+          background: #fff !important; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .south-search-area .advanced-search-form #cities + .nice-select,
+        .south-search-area .advanced-search-form #catagories + .nice-select,
+        .south-search-area .advanced-search-form #offers + .nice-select,
+        .south-search-area .advanced-search-form #listings + .nice-select {
+          background-color: #fff !important;
+          background: #fff !important; } }
+    .south-search-area .advanced-search-form .form-group #cities + .nice-select,
+    .south-search-area .advanced-search-form .form-group #catagories + .nice-select,
+    .south-search-area .advanced-search-form .form-group #offers + .nice-select,
+    .south-search-area .advanced-search-form .form-group #listings + .nice-select {
+      background-color: #fff !important;
+      background: #fff !important; }
+    .south-search-area .advanced-search-form .form-group:has(#cities) .nice-select,
+    .south-search-area .advanced-search-form .form-group:has(#catagories) .nice-select,
+    .south-search-area .advanced-search-form .form-group:has(#offers) .nice-select,
+    .south-search-area .advanced-search-form .form-group:has(#listings) .nice-select {
+      background-color: #fff !important;
+      background: #fff !important; }
     .south-search-area .advanced-search-form .search-title {
       position: absolute;
       width: 260px;
@@ -1898,5 +1939,43 @@ img {
 .single-cool-fact-area h6 {
   margin-bottom: 0;
   color: #7d7d7d; }
+
+/* Fix dropdown backgrounds for cities, categories, offers, listings */
+.south-search-area .advanced-search-form #cities + .nice-select,
+.south-search-area .advanced-search-form #catagories + .nice-select,
+.south-search-area .advanced-search-form #offers + .nice-select,
+.south-search-area .advanced-search-form #listings + .nice-select {
+  background-color: #fff !important;
+  background: #fff !important;
+  background-image: none !important; }
+
+.south-search-area .advanced-search-form #cities + .nice-select:hover,
+.south-search-area .advanced-search-form #cities + .nice-select:focus,
+.south-search-area .advanced-search-form #cities + .nice-select:active,
+.south-search-area .advanced-search-form #cities + .nice-select.open,
+.south-search-area .advanced-search-form #catagories + .nice-select:hover,
+.south-search-area .advanced-search-form #catagories + .nice-select:focus,
+.south-search-area .advanced-search-form #catagories + .nice-select:active,
+.south-search-area .advanced-search-form #catagories + .nice-select.open,
+.south-search-area .advanced-search-form #offers + .nice-select:hover,
+.south-search-area .advanced-search-form #offers + .nice-select:focus,
+.south-search-area .advanced-search-form #offers + .nice-select:active,
+.south-search-area .advanced-search-form #offers + .nice-select.open,
+.south-search-area .advanced-search-form #listings + .nice-select:hover,
+.south-search-area .advanced-search-form #listings + .nice-select:focus,
+.south-search-area .advanced-search-form #listings + .nice-select:active,
+.south-search-area .advanced-search-form #listings + .nice-select.open {
+  background-color: #fff !important;
+  background: #fff !important;
+  background-image: none !important; }
+
+@media only screen and (max-width: 991px) {
+  .south-search-area .advanced-search-form #cities + .nice-select,
+  .south-search-area .advanced-search-form #catagories + .nice-select,
+  .south-search-area .advanced-search-form #offers + .nice-select,
+  .south-search-area .advanced-search-form #listings + .nice-select {
+    background-color: #fff !important;
+    background: #fff !important;
+    background-image: none !important; } }
 
 /*# sourceMappingURL=style.css.map */
